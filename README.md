@@ -8,4 +8,4 @@ Página estática para o link da bio do Instagram. Não requer instalação ou p
 2. Em **Settings → Pages**, escolha **Deploy from a branch**, selecione a branch principal e a pasta **/(root)**.
 3. Use o endereço informado pelo GitHub Pages no campo **Site** do perfil do Instagram.
 
-O WhatsApp está configurado para `https://wa.me/5547920005837`. Os outros quatro links são os endereços fornecidos no pedido, na mesma ordem.
+O WhatsApp está configurado para `https://wa.me/5547920005837`. Os outros três links são o site, o Perfil da Empresa no Google e o Google Visibility Kit, nessa ordem.
