@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#343232" />
+    <meta name="description" content="Conheça a Carus MKT: fale conosco, visite nosso site, explore o portfólio e descubra nossas soluções para sua presença no Google." />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Carus MKT | Links" />
+    <meta property="og:description" content="Estratégia para colocar sua marca no lugar certo. Acesse os canais e projetos da Carus MKT." />
+    <title>Carus MKT | Links</title>
+    <link rel="icon" href="assets/favicon.svg?v=2" type="image/svg+xml" />
+    <link rel="preload" href="assets/carus-logo-transparent.svg" as="image" type="image/svg+xml" />
+    <style>
+      :root {
+        color-scheme: dark;
+        --pine: #275441;
+        --graphite: #343232;
+        --muted: #8a9f95;
+        --paper: #f4f2ea;
+        --white: #ffffff;
+      }
+
+      * { box-sizing: border-box; }
+      html { min-height: 100%; }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        min-height: 100svh;
+        color: var(--paper);
+        background: var(--graphite);
+        font-family: Arial, Helvetica, sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      body::before,
+      body::after {
+        content: "";
+        position: fixed;
+        z-index: 0;
+        pointer-events: none;
+        background-image: url("assets/monogram-watermark.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0;
+      }
+      body::before {
+        width: min(92vw, 650px);
+        aspect-ratio: 116 / 71;
+        left: -43vw;
+        bottom: -12vw;
+        animation: watermark-enter-left 1.35s cubic-bezier(.22, 1, .36, 1) .08s both;
+      }
+      body::after {
+        width: min(112vw, 780px);
+        aspect-ratio: 116 / 71;
+        right: -45vw;
+        top: -19vw;
+        animation: watermark-enter-right 1.45s cubic-bezier(.22, 1, .36, 1) .24s both;
+      }
+      @keyframes watermark-enter-left {
+        from { opacity: 0; transform: translate3d(-22px, 18px, 0) scale(.95); }
+        to { opacity: .095; transform: translate3d(0, 0, 0) scale(1); }
+      }
+      @keyframes watermark-enter-right {
+        from { opacity: 0; transform: translate3d(22px, -18px, 0) scale(.95); }
+        to { opacity: .095; transform: translate3d(0, 0, 0) scale(1); }
+      }
+
+      .page {
+        position: relative;
+        z-index: 1;
+        width: min(100% - 40px, 510px);
+        margin: 0 auto;
+        padding: clamp(30px, 5vh, 54px) 0 28px;
+      }
+
+      .hero { text-align: center; }
+      .brand-logo {
+        display: block;
+        width: clamp(164px, 44vw, 202px);
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto 26px;
+      }
+
+      .eyebrow {
+        margin: 0 0 10px;
+        color: #b4c9ba;
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: .27em;
+        text-transform: uppercase;
+      }
+      h1 {
+        max-width: 450px;
+        margin: 0 auto;
+        font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+        font-size: clamp(29px, 7vw, 40px);
+        font-weight: 400;
+        line-height: 1.16;
+        letter-spacing: -.025em;
+      }
+      .intro {
+        max-width: 375px;
+        margin: 13px auto 29px;
+        color: #d3d1cc;
+        font-size: 14px;
+        line-height: 1.55;
+      }
+
+      .links { display: grid; gap: 10px; }
+      .link {
+        position: relative;
+        min-height: 68px;
+        padding: 14px 18px;
+        display: grid;
+        grid-template-columns: 36px minmax(0, 1fr) 22px;
+        gap: 14px;
+        align-items: center;
+        border: 1px solid #ffffff1c;
+        border-radius: 17px;
+        color: var(--graphite);
+        background: #f4f2ea;
+        box-shadow: 0 6px 0 #20201f, 0 11px 18px #00000024;
+        text-decoration: none;
+        -webkit-tap-highlight-color: transparent;
+        transition: transform .16s ease, box-shadow .16s ease, border-color .16s ease;
+      }
+      .link:hover {
+        transform: translateY(-2px);
+        border-color: #c1d6c7;
+        box-shadow: 0 8px 0 #20201f, 0 16px 24px #0000002e;
+      }
+      .link:active,
+      .link.is-pressed {
+        transform: translateY(5px) scale(.985);
+        box-shadow: 0 1px 0 #20201f, 0 3px 8px #00000026;
+      }
+      .link:focus-visible {
+        outline: 3px solid var(--pine);
+        outline-offset: 3px;
+      }
+      .link-primary {
+        color: var(--white);
+        border-color: var(--pine);
+        background: var(--pine);
+        box-shadow: 0 6px 0 #193a2c, 0 11px 18px #00000024;
+      }
+      .link-primary:hover { border-color: #87ab94; box-shadow: 0 8px 0 #193a2c, 0 16px 24px #0000002e; }
+      .link-primary:active,
+      .link-primary.is-pressed { box-shadow: 0 1px 0 #193a2c, 0 3px 8px #00000026; }
+      .icon {
+        width: 36px;
+        height: 36px;
+        display: grid;
+        place-items: center;
+        border-radius: 11px;
+        color: var(--pine);
+        background: #eaf0ec;
+      }
+      .link-primary .icon { color: var(--white); background: #ffffff25; }
+      .icon svg { width: 20px; height: 20px; }
+      .icon img { display: block; width: 26px; height: 26px; filter: brightness(0) invert(1); }
+      .label { min-width: 0; }
+      .label strong {
+        display: block;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1.3;
+      }
+      .label small {
+        display: block;
+        margin-top: 2px;
+        color: #747b77;
+        font-size: 11px;
+        line-height: 1.35;
+      }
+      .link-primary .label small { color: #dbe9e0; }
+      .arrow { width: 18px; height: 18px; opacity: .75; }
+
+      footer {
+        margin-top: 30px;
+        text-align: center;
+        color: #b9b9b3;
+        font-size: 10px;
+        letter-spacing: .13em;
+        text-transform: uppercase;
+      }
+      footer::before {
+        content: "";
+        display: block;
+        width: 28px;
+        height: 1px;
+        margin: 0 auto 17px;
+        background: var(--muted);
+      }
+
+      @media (max-width: 380px) {
+        .page { width: min(100% - 28px, 510px); }
+        .link { gap: 11px; padding-inline: 13px; }
+        .label strong { font-size: 13px; }
+      }
+      @media (min-width: 700px) {
+        body::before { left: -280px; bottom: -120px; }
+        body::after { right: -300px; top: -180px; }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .link { transition: none; }
+        body::before,
+        body::after { animation: none; opacity: .095; }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <header class="hero">
+        <img class="brand-logo" src="assets/carus-logo-transparent.svg" alt="Logotipo da Carus MKT" width="126" height="103" />
+        <p class="eyebrow">Marketing digital estratégico</p>
+        <h1>O topo não aceita sorte.<br />Aceita estratégia.</h1>
+        <p class="intro">Conheça nosso trabalho e descubra como podemos fortalecer a presença digital da sua marca.</p>
+      </header>
+
+      <nav class="links" aria-label="Links da Carus MKT">
+        <a class="link link-primary" href="https://wa.me/5547920005837" aria-label="Fale com a Carus MKT pelo WhatsApp no número 47 92000-5837">
+          <span class="icon" aria-hidden="true"><img src="assets/whatsapp.svg" alt="" width="26" height="26" /></span>
+          <span class="label"><strong>Fale com a gente no WhatsApp</strong><small>(47) 92000-5837</small></span>
+          <svg class="arrow" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+        </a>
+        <a class="link" href="https://carusmkt.com.br/">
+          <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 3.8 5.5 3.8 9S14.5 18.5 12 21c-2.5-2.5-3.8-5.5-3.8-9S9.5 5.5 12 3Z"/></svg></span>
+          <span class="label"><strong>Nosso site</strong><small>Conheça a Carus MKT</small></span>
+          <svg class="arrow" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+        </a>
+        <a class="link" href="https://carusmkt.github.io/portfolio/">
+          <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="14" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 13h18"/></svg></span>
+          <span class="label"><strong>Portfólio</strong><small>Projetos e entregas</small></span>
+          <svg class="arrow" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+        </a>
+        <a class="link" href="https://carusmkt.com.br/googleempresas/">
+          <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.1 2.8c-.38-.5-.97-.8-1.6-.8h-11c-.63 0-1.22.3-1.6.8L2.2 6.4c-.13.17-.2.38-.2.6v1c0 1.04.41 1.98 1.06 2.69c-.03.1-.06.2-.06.31v9c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-9c0-.11-.03-.21-.06-.31C21.59 9.98 22 9.04 22 8V7c0-.22-.07-.43-.2-.6zm.9 4.53V8c0 1.1-.9 2-2 2s-2-.9-2-2V7q0-.12-.03-.24L15.28 4h2.22zM10.78 4h2.44L14 7.12V8c0 1.1-.9 2-2 2s-2-.9-2-2v-.88zM4 7.33L6.5 4h2.22l-.69 2.76Q8 6.88 8 7v1c0 1.1-.9 2-2 2s-2-.9-2-2zM10 20v-4h4v4zm6 0v-4c0-1.1-.9-2-2-2h-4c-1.1 0-2 .9-2 2v4H5v-8.14c.32.08.65.14 1 .14c1.2 0 2.27-.54 3-1.38c.73.84 1.8 1.38 3 1.38s2.27-.54 3-1.38c.73.84 1.8 1.38 3 1.38c.35 0 .68-.06 1-.14V20z"/></svg></span>
+          <span class="label"><strong>Perfil da Empresa no Google</strong><small>Seu negócio em evidência nas buscas</small></span>
+          <svg class="arrow" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+        </a>
+        <a class="link" href="https://carusmkt.github.io/GVK/">
+          <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18 9 12l4 3 8-9"/><path d="M16 6h5v5M3 21h18"/></svg></span>
+          <span class="label"><strong>Google Visibility Kit</strong><small>Mais visibilidade para sua empresa</small></span>
+          <svg class="arrow" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+        </a>
+      </nav>
+      <footer>Carus MKT · Estratégia para chegar ao topo</footer>
+    </main>
+    <script>
+      document.querySelectorAll('.link').forEach((link) => {
+        link.addEventListener('click', (event) => {
+          if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+          event.preventDefault();
+          link.classList.add('is-pressed');
+          window.setTimeout(() => { window.location.href = link.href; }, 170);
+        });
+      });
+      window.addEventListener('pageshow', () => {
+        document.querySelectorAll('.link.is-pressed').forEach((link) => link.classList.remove('is-pressed'));
+      });
+    </script>
+  </body>
+</html>
